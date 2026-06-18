@@ -1,56 +1,45 @@
 # C++ Algorithms and Data Structures
 
-This repo contains some C++ programs I wrote while practicing common algorithms and data structures.
+C++ implementations of core algorithms and data structures — each module
+is self-contained, compiles independently with `g++`, and covers the
+fundamental logic used in systems programming and technical interviews.
 
-Most files are small and separate from each other, so you can open any `.cpp` file, compile it, and run it directly.
+---
 
-## Programs Included
+## Implementations
 
-- `BinarySearch.cpp`
-- `LinearSearch.cpp`
-- `MergeSort.cpp`
-- `QuickSort.cpp`
-- `SelectionSort.cpp`
-- `MergingTwoArrays.cpp`
-- `Stack.cpp`
-- `Queue.cpp`
-- `DoubleLL.cpp`
-- `BinarySearchTree.cpp`
-- `Treversing.cpp`
-- `InfixToPostfix.cpp`
-- `TOH.cpp`
+| File | Category | What it implements |
+|------|----------|--------------------|
+| `BinarySearch.cpp` | Searching | O(log n) search on sorted arrays |
+| `LinearSearch.cpp` | Searching | Sequential scan, unsorted arrays |
+| `MergeSort.cpp` | Sorting | Divide-and-conquer, O(n log n) |
+| `QuickSort.cpp` | Sorting | In-place partitioning sort |
+| `SelectionSort.cpp` | Sorting | Minimum selection, O(n²) |
+| `MergingTwoArrays.cpp` | Arrays | Merging two sorted arrays |
+| `Stack.cpp` | Data Structure | LIFO stack — push, pop, peek |
+| `Queue.cpp` | Data Structure | FIFO queue — enqueue, dequeue |
+| `DoubleLL.cpp` | Data Structure | Doubly linked list — insert, delete, traverse |
+| `BinarySearchTree.cpp` | Trees | BST — insert, search, delete |
+| `Treversing.cpp` | Trees | Inorder, preorder, postorder traversal |
+| `InfixToPostfix.cpp` | Stack Application | Expression conversion using stack |
+| `TOH.cpp` | Recursion | Tower of Hanoi — recursive solution |
 
-## Topics Covered
+---
 
-- Searching
-- Sorting
-- Stack and queue
-- Doubly linked list
-- Binary search tree
-- Infix to postfix conversion
-- Tower of Hanoi
+## Build & Run
 
-## How to Run
-
-You need a C++ compiler like `g++`.
-
-Example:
-
-```bash
-mkdir -p build
-g++ BinarySearch.cpp -o build/BinarySearch
-./build/BinarySearch
-```
-
-You can replace `BinarySearch.cpp` with any other file name from the repo.
-
-If you want to compile with warnings enabled:
+Requires `g++` (GCC C++ compiler).
 
 ```bash
 mkdir -p build
 g++ -std=c++17 -Wall BinarySearch.cpp -o build/BinarySearch
+./build/BinarySearch
 ```
 
-## Note
+Replace `BinarySearch.cpp` with any filename from the table above.
 
-This is mainly a practice repository, so the code is written in a simple way to understand the basic logic of each algorithm or data structure.
+---
+
+## Environment
+
+Built on **Kali Linux** · compiled with `g++ -std=c++17`
